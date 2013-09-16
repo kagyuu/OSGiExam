@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "LookupPojoFromCDI", urlPatterns = {"/LookupPojoFromCDI"})
 public class LookupPojoFromCDI extends HttpServlet {
 
-    @Resource
+    @Resource(mappedName = "hello-service")
     private Hello hello;
         
     @Override
